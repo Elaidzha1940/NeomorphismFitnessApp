@@ -26,14 +26,18 @@ struct HeadView: View {
     var body: some View {
         
         HStack {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 15) {
                 Text("Morning Elijah")
-                    .font(.title)
+                    .font(.system(size: 30, weight: .semibold, design: .serif))
+                
                 Text("Lets get started")
-                    .font(.callout)
+                    .font(.system(size: 20, weight: .regular, design: .serif))
             }
             Spacer()
+            
             Image("profile")
+                .background(.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
         }
     }
 }
