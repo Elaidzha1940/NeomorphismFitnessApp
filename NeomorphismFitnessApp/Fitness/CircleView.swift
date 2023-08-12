@@ -12,13 +12,19 @@
 import SwiftUI
 
 struct CircleView: View {
+    
+    private let shadowOffset: CGFloat = 8
+    private let shadowRadius: CGFloat = 9
+    private let shadowColor: Color = Color(red: 0.922, green: 0.925, blue: 0.941)
+    private let highlightColor: Color = .white
+     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
 
-struct CircleViewPreviews: PreviewProvider {
-    static var previews: some View {
-        CircleView()
+            Circle()
+                .fill(Color.bgGrey)
+                .shadow(color: shadowColor, radius: shadowRadius, x: shadowOffset, y: shadowOffset)
+                .shadow(color: highlightColor, radius: -shadowRadius, x: -shadowOffset, y: shadowOffset)
+        }
     }
-}
+
+
