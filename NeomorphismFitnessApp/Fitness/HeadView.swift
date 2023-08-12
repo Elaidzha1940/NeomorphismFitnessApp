@@ -5,6 +5,8 @@
 //  Created by: Elaidzha Shchukin
 //  Date: 12.08.2023
 //
+//  Status: in progress | Decorated
+//
 //  */
 
 import Foundation
