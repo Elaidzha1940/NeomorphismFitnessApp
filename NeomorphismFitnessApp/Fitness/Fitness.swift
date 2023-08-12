@@ -15,16 +15,40 @@ struct Fitness: View {
     var body: some View {
         
         VStack {
-          
-            HeadView(name: "Elijah")
             
-           Spacer()
+            HeadView(name: "Elijah", image: "profile")
+                .padding()
+            
+            Head()
+                .padding()
+            
+            Spacer()
         }
         .padding()
         .background(Color(red: 0.922, green: 0.925, blue: 0.941))
     }
 }
 
+struct Head: View {
+    var body: some View {
+        
+        GeometryReader { geo in
+            ZStack {
+                ForEach(0..<360, id: \.self) { index in
+                    if (Double(index).truncatingRemainder(dividingBy: 2.25) == 0) {
+                        
+                        Rectangle()
+                            .frame(width: 1)
+                            .rotationEffect(.degrees(Double(index)))
+                    }
+                }
+                Circle()
+            }
+            .foregroundColor(.accentColor)
+            .foregroundColor(Color(red: 0.922, green: 0.925, blue: 0.941))
+        }
+    }
+}
 
 struct Fitness_Previews: PreviewProvider {
     static var previews: some View {
@@ -32,3 +56,7 @@ struct Fitness_Previews: PreviewProvider {
     }
 }
 
+//extension Color {
+//
+//    static let bgGrey = Color(red: 0.922, green: 0.925, blue: 0.941)
+//}

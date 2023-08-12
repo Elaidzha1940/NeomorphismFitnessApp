@@ -13,6 +13,7 @@ import SwiftUI
 struct HeadView: View {
     
     let name: String
+    let image: String
     
     var body: some View {
         
@@ -27,13 +28,12 @@ struct HeadView: View {
             }
             Spacer()
             
-            Image("profile")
+            Image(image)
                 .resizable()
                 .scaledToFit()
                 .background(.gray)
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .frame(width: 50)
         }
-        .foregroundColor(.accentColor)
     }
 }
