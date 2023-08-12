@@ -25,7 +25,7 @@ struct HeadView: View {
                     .font(.system(size: 30, weight: .semibold, design: .serif))
                     .multilineTextAlignment(.leading)
                 
-                Text("Lets get started")
+                Text("Let's get started")
                     .font(.system(size: 20, weight: .regular, design: .serif))
             }
             Spacer()

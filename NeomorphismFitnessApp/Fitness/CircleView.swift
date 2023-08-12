@@ -24,6 +24,6 @@ struct CircleView: View {
             Circle()
                 .fill(Color.bgGrey)
                 .shadow(color: shadowColor, radius: shadowRadius, x: shadowOffset, y: shadowOffset)
-                .shadow(color: highlightColor, radius: -shadowRadius, x: -shadowOffset, y: shadowOffset)
+                .shadow(color: highlightColor, radius: shadowRadius, x: -shadowOffset, y: -shadowOffset)
         }
     }

@@ -31,9 +31,6 @@ struct Fitness: View {
 
 struct Head: View {
     
-    //    let shadowOffset: CGFloat = 8
-    //    let shadowRadius: CGFloat = 9
-    
     let goal: Int
     let steps: Int
     
@@ -42,12 +39,13 @@ struct Head: View {
         ZStack {
             
             SportView()
+                .padding(110)
             
             CircleView()
             
             ZStack {
                 CircleView()
-               
+                
                 Circle()
                     .stroke(style: StrokeStyle(lineWidth: 12))
                     .padding(20)
@@ -55,7 +53,6 @@ struct Head: View {
                 Circle()
                     .stroke(style: StrokeStyle(lineWidth: 12))
                     .padding(20)
-                    .foregroundColor(.fgGrey)
                 
                 VStack {
                     
