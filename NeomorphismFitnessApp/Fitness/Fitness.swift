@@ -19,7 +19,7 @@ struct Fitness: View {
             HeadView(name: "Elijah", image: "profile")
                 .padding()
             
-            Head()
+            Head(goal: 10_000, steps: 7_828)
                 .padding()
             
             Spacer()
@@ -33,6 +33,9 @@ struct Head: View {
     
     let shadowOffset: CGFloat = 8
     let shadowRadius: CGFloat = 9
+    
+    let goal: Int
+    let steps: Int
     
     var body: some View {
         
@@ -61,11 +64,25 @@ struct Head: View {
                     Circle()
                         .stroke(style: StrokeStyle(lineWidth: 12))
                         .padding(20)
+                    
+                    VStack {
+                        
+                        Text("Goal: \(goal)")
+                            .font(.system(size: 18, weight: .regular, design: .serif))
+
+                        Text("\(steps)")
+                            .font(.system(size: 30, weight: .semibold, design: .serif))
+                            .padding()
+                        
+                        Text("Steps")
+                            .font(.system(size: 18 , weight: .regular, design: .serif))
+
+                    }
                 }
                 .padding()
             }
-            .foregroundColor(.accentColor)
         }
+        .foregroundColor(.accentColor)
     }
 }
 
