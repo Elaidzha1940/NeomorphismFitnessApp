@@ -64,6 +64,7 @@ struct Head: View {
                     Circle()
                         .stroke(style: StrokeStyle(lineWidth: 12))
                         .padding(20)
+                        .foregroundColor(.fgGrey)
                     
                     VStack {
                         
@@ -95,4 +96,5 @@ struct Fitness_Previews: PreviewProvider {
 extension Color {
 
     static let bgGrey = Color(red: 0.922, green: 0.925, blue: 0.941)
+    static let fgGrey = Color(red: 0.871, green: 0.871, blue: 0.871)
 }
