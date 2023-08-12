@@ -14,6 +14,7 @@
 		E49093CC2A87978E00387408 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093CB2A87978E00387408 /* HeadView.swift */; };
 		E49093D02A87E8CB00387408 /* SportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093CF2A87E8CB00387408 /* SportView.swift */; };
 		E49093D22A87F03C00387408 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093D12A87F03C00387408 /* CircleView.swift */; };
+		E49093D42A87FCEB00387408 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093D32A87FCEB00387408 /* Head.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E49093CB2A87978E00387408 /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		E49093CF2A87E8CB00387408 /* SportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportView.swift; sourceTree = "<group>"; };
 		E49093D12A87F03C00387408 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		E49093D32A87FCEB00387408 /* Head.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E49093CB2A87978E00387408 /* HeadView.swift */,
 				E49093CF2A87E8CB00387408 /* SportView.swift */,
 				E49093D12A87F03C00387408 /* CircleView.swift */,
+				E49093D32A87FCEB00387408 /* Head.swift */,
 			);
 			path = Fitness;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				E49093BE2A87749E00387408 /* Fitness.swift in Sources */,
 				E49093D22A87F03C00387408 /* CircleView.swift in Sources */,
 				E49093CC2A87978E00387408 /* HeadView.swift in Sources */,
+				E49093D42A87FCEB00387408 /* Head.swift in Sources */,
 				E49093BC2A87749E00387408 /* NeomorphismFitnessAppApp.swift in Sources */,
 				E49093D02A87E8CB00387408 /* SportView.swift in Sources */,
 			);
