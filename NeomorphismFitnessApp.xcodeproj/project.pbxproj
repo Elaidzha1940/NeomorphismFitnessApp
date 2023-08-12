@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E49093BC2A87749E00387408 /* NeomorphismFitnessAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093BB2A87749E00387408 /* NeomorphismFitnessAppApp.swift */; };
-		E49093BE2A87749E00387408 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093BD2A87749E00387408 /* ContentView.swift */; };
+		E49093BE2A87749E00387408 /* Fitness.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49093BD2A87749E00387408 /* Fitness.swift */; };
 		E49093C02A87749F00387408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49093BF2A87749F00387408 /* Assets.xcassets */; };
 		E49093C42A87749F00387408 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49093C32A87749F00387408 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		E49093B82A87749E00387408 /* NeomorphismFitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeomorphismFitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49093BB2A87749E00387408 /* NeomorphismFitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeomorphismFitnessAppApp.swift; sourceTree = "<group>"; };
-		E49093BD2A87749E00387408 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E49093BD2A87749E00387408 /* Fitness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness.swift; sourceTree = "<group>"; };
 		E49093BF2A87749F00387408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49093C12A87749F00387408 /* NeomorphismFitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeomorphismFitnessApp.entitlements; sourceTree = "<group>"; };
 		E49093C32A87749F00387408 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,8 +52,8 @@
 		E49093BA2A87749E00387408 /* NeomorphismFitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				E49093CA2A8793A500387408 /* Fitness */,
 				E49093BB2A87749E00387408 /* NeomorphismFitnessAppApp.swift */,
-				E49093BD2A87749E00387408 /* ContentView.swift */,
 				E49093BF2A87749F00387408 /* Assets.xcassets */,
 				E49093C12A87749F00387408 /* NeomorphismFitnessApp.entitlements */,
 				E49093C22A87749F00387408 /* Preview Content */,
@@ -67,6 +67,14 @@
 				E49093C32A87749F00387408 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E49093CA2A8793A500387408 /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				E49093BD2A87749E00387408 /* Fitness.swift */,
+			);
+			path = Fitness;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E49093BE2A87749E00387408 /* ContentView.swift in Sources */,
+				E49093BE2A87749E00387408 /* Fitness.swift in Sources */,
 				E49093BC2A87749E00387408 /* NeomorphismFitnessAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
