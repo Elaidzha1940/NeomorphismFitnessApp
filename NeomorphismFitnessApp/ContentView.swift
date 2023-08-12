@@ -21,8 +21,21 @@ struct ContentView: View {
     }
 }
 
+struct HeadView: View {
+    var body: some View {
+        
+        HStack {
+            VStack {
+                
+            }
+            Image("")
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
