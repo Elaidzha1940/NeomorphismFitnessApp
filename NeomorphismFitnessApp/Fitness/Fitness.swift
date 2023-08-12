@@ -25,7 +25,7 @@ struct Fitness: View {
             Spacer()
         }
         .padding()
-        .background(Color(red: 0.922, green: 0.925, blue: 0.941))
+        .background(Color.bgGrey)
     }
 }
 
@@ -45,7 +45,7 @@ struct Head: View {
                 Circle()
             }
             .foregroundColor(.accentColor)
-            .foregroundColor(Color(red: 0.922, green: 0.925, blue: 0.941))
+            .foregroundColor(Color.bgGrey)
         }
     }
 }
@@ -56,7 +56,7 @@ struct Fitness_Previews: PreviewProvider {
     }
 }
 
-//extension Color {
-//
-//    static let bgGrey = Color(red: 0.922, green: 0.925, blue: 0.941)
-//}
+extension Color {
+
+    static let bgGrey = Color(red: 0.922, green: 0.925, blue: 0.941)
+}
