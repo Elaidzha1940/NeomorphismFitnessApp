@@ -9,6 +9,7 @@
 //
 //  */
  
+import Foundation
 import SwiftUI
 
 struct CircleView: View {
@@ -26,5 +27,3 @@ struct CircleView: View {
                 .shadow(color: highlightColor, radius: -shadowRadius, x: -shadowOffset, y: shadowOffset)
         }
     }
-
-

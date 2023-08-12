@@ -25,8 +25,4 @@ struct SportView: View {
     }
 }
 
-struct SportView_Previews: PreviewProvider {
-    static var previews: some View {
-        SportView()
-    }
-}
+
