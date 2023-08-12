@@ -16,8 +16,9 @@ struct ContentView: View {
         
         VStack {
           
-            
+            HeadView()
         }
+        .padding()
     }
 }
 
@@ -25,10 +26,14 @@ struct HeadView: View {
     var body: some View {
         
         HStack {
-            VStack {
-                
+            VStack(alignment: .leading) {
+                Text("Morning Elijah")
+                    .font(.title)
+                Text("Lets get started")
+                    .font(.callout)
             }
-            Image("")
+            Spacer()
+            Image("profile")
         }
     }
 }
