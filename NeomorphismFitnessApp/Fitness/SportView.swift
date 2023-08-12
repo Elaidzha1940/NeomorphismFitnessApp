@@ -19,7 +19,6 @@ struct SportView: View {
             if (Double(index).truncatingRemainder(dividingBy: 2.25) == 0) {
                 
                 Rectangle()
-                    //.trim(from: 0, to: 0.05)
                     .frame(width: 1)
                     .rotationEffect(.degrees(Double(index)))
             }

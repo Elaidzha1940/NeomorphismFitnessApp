@@ -19,7 +19,7 @@ struct Fitness: View {
             HeadView(name: "Elijah", image: "profile")
                 .padding()
             
-            Head(goal: 10_000, steps: 7_828)
+            Head(goal: 10_000, steps: 7_111)
                 .padding()
             
             Spacer()
@@ -51,7 +51,10 @@ struct Head: View {
                     .padding(20)
                     .foregroundColor(.fgGrey)
                 Circle()
-                    .stroke(style: StrokeStyle(lineWidth: 12))
+                    .trim(from: 0, to: (CGFloat(steps) / CGFloat(goal)))
+                    .scale(x: -1)
+                    .rotation(.degrees(90))
+                    .stroke(style: StrokeStyle(lineWidth: 12, lineCap: .butt))
                     .padding(20)
                 
                 VStack {
