@@ -19,14 +19,29 @@ struct Fitness: View {
             HeadView(name: "Elijah", image: "profile")
                 .padding()
             
-            Head(goal: 10_000, steps: 7_111)
+            Head(goal: 10_000, steps: 5_655)
                 .padding()
             
             HStack(spacing: 30) {
                 
-                Title(image: "flag.fill", value: "4.88", measurement: "Km")
-                Title(image: "flame", value: "319", measurement: "Kcal")
-                Title(image: "timer.circle.fill", value: "67", measurement: "Time")
+                Button {
+                    //action
+                } label: {
+                    Title(image: "flag.fill", value: "4.88", measurement: "Km")
+                }
+                
+                Button {
+                    //action
+                } label: {
+                    Title(image: "flame", value: "319", measurement: "Kcal")
+                }
+                
+                Button {
+                    //action
+                } label: {
+                    Title(image: "timer.circle.fill", value: "67", measurement: "Time")
+                }
+
             }
             .padding()
             
@@ -46,6 +61,7 @@ struct Title: View {
     var body: some View {
         
         VStack {
+            
             Image(systemName: image)
                 .font(.system(size: 20, weight: .regular, design: .serif))
 

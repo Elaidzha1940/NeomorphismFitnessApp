@@ -22,7 +22,7 @@ struct Head: View {
         ZStack {
             
             SportView()
-                .padding(110)
+                .padding(40)
             
             CircleView()
             
