@@ -15,7 +15,7 @@ import SwiftUI
 struct CircleView: View {
     
     private let shadowOffset: CGFloat = 8
-    private let shadowRadius: CGFloat = 9
+    private let shadowRadius: CGFloat = 3
     private let shadowColor: Color = Color(red: 0.922, green: 0.925, blue: 0.941)
     private let highlightColor: Color = .white
      
